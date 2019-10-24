@@ -6,9 +6,9 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 08:46:36 by patrisor          #+#    #+#              #
-#    Updated: 2019/10/24 08:46:37 by patrisor         ###   ########.fr        #
+#    Updated: 2019/10/24 09:42:55 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 #!/usr/bin/sh
+docker run -d -p 5000:80 --name overlord --restart=always nginx
+# TO TEST: open -a Safari http://$(./02):5000

@@ -6,9 +6,8 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 08:46:29 by patrisor          #+#    #+#              #
-#    Updated: 2019/10/24 08:46:30 by patrisor         ###   ########.fr        #
+#    Updated: 2019/10/24 09:26:36 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 #!/usr/bin/sh
+docker run hello-world
