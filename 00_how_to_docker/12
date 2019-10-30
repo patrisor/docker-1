@@ -6,9 +6,12 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 08:47:05 by patrisor          #+#    #+#              #
-#    Updated: 2019/10/24 08:47:07 by patrisor         ###   ########.fr        #
+#    Updated: 2019/10/30 07:54:12 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 #!/usr/bin/sh
+docker run -d --name spawning-pool -v hatchery --restart on-failure -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings mysql
+# TO TEST: 
+# 	- run to see it exists: docker ps
+# 	- run to see full log: docker inspect spawning-pool
+# 	- run to delete: docker stop spawning-pool; docker rm spawning-pool

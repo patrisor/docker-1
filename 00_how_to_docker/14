@@ -6,9 +6,9 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 08:47:14 by patrisor          #+#    #+#              #
-#    Updated: 2019/10/24 08:47:15 by patrisor         ###   ########.fr        #
+#    Updated: 2019/10/30 08:16:44 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 #!/usr/bin/sh
+docker run --name lair -p 8080:80 --link spawning-pool -d wordpress
+# TO TEST, run: http://$(./02):8080

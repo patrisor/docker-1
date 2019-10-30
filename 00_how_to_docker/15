@@ -6,9 +6,8 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/24 08:47:18 by patrisor          #+#    #+#              #
-#    Updated: 2019/10/24 08:47:20 by patrisor         ###   ########.fr        #
+#    Updated: 2019/10/30 08:22:47 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 #!/usr/bin/sh
+docker run --name roach-warden -p 8081:80 --link spawning-pool -d phpmyadmin/phpmyadmin
